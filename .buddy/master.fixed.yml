@@ -21,6 +21,18 @@
       pipeline: 15216278790834
     environments:
     - all: true
+    - project: onchain-lending
+      environment: asw_2
+    - project: circleci-docs-2
+      environment: master_2
+    - project: onchain-lending
+      environment: asw_3
+    - environment: dct
+    - environment: dct_2
+    - project: circleci-docs
+      environment: dct_2
+    - project: onchain-lending
+      environment: asw
   base_only: true
   targets:
   - target: t-dct555-ci
