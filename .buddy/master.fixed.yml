@@ -1,0 +1,32 @@
+- environment: master
+  variables:
+  - key: ether
+    value: 192.168.1.1
+    type: FILE
+    path: /buddy-variables/ether
+  name: master
+  permissions:
+    others: DEFAULT
+    pipelines:
+    - all: true
+    - project: circleci-docs
+      pipeline: asw2
+    - project: circleci-docs
+      pipeline: 692191
+    - project: circleci-docs
+      pipeline: dct
+    - project: circleci-docs
+      pipeline: asw
+    - project: circleci-docs
+      pipeline: 15216278790834
+    environments:
+    - all: true
+  base_only: true
+  targets:
+  - target: t-dct555-ci
+    type: SSH
+    name: $dct555$CI
+    host: $dct555$CI
+    auth:
+      username: dct555
+      password: 'Redtree1503# '
