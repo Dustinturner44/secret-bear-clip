@@ -6,7 +6,7 @@
     path: /buddy-variables/ether
   name: master
   permissions:
-    others: DEFAULT
+    others: USE_ONLY
     pipelines:
     - all: true
     - project: circleci-docs
